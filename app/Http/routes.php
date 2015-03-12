@@ -26,5 +26,6 @@ Route::group([
 	],
 	function(){
 		Route::get('/', 'AdminHomeController@index');
+		Route::resource('pages', 'PagesController');
 	}
 );
