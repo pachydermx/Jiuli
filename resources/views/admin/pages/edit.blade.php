@@ -26,11 +26,9 @@
 						<input type="hidden" name="_token" value="{{ csrf_token() }}">
 						<input type="text" name="title" class="form-control" required="required" value="{{ $page->title }}">
 						<br>
-						<textarea name="body" rows="10" class="form-control" required="required">
-							{{ $page->body }}
-						</textarea>
+						<textarea name="body" rows="10" class="form-control" required="required">{{ $page->body }}</textarea>
 						<br>
-						<button class="btn btn-lg btn-info">新增 Page</button>
+						<button class="btn btn-lg btn-info">确认</button>
 					</form>
 				</div>
 			</div>

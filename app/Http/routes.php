@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', 'WelcomeController@index');
-
-Route::get('home', 'HomeController@index');
+Route::get('/', 'HomeController@index');
+Route::get('pages/{id}', 'PagesController@show');
 
 /* 带注册的登录
 Route::controllers([

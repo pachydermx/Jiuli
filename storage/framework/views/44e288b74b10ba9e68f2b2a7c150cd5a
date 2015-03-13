@@ -1,0 +1,22 @@
+<?php $__env->startSection('content'); ?>
+	<h4>
+		<a href="/">⬅️返回首页</a>
+	</h4>
+
+	<h1 style="text-align: center; margin-top: 50px;">
+		<?php echo e($page->title); ?>
+
+	</h1>
+	<hr>
+	<div id="date" style="text-align: right;">
+		<?php echo e($page->updated_at); ?>
+
+	</div>
+	<div id="content" style="padding: 50px;">
+		<p>
+			<?php echo e($page->body); ?>
+
+		</p>
+	</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('_layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

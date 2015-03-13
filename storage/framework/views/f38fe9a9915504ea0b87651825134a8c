@@ -1,17 +1,29 @@
 <?php $__env->startSection('content'); ?>
-<div class="container">
-	<div class="row">
-		<div class="col-md-10 col-md-offset-1">
-			<div class="panel panel-default">
-				<div class="panel-heading">Home</div>
+<div id="title" style="text-align: center;">
+	<h1>九离</h1>
+	<div style="padding: 5px; font-size: 16px;">
+		<?php echo e(Inspiring::quote()); ?>
 
-				<div class="panel-body">
-					You are logged in!
-				</div>
-			</div>
-		</div>
 	</div>
+</div>
+<hr>
+<div id="content">
+
+	<ul>
+		<?php foreach($pages as $page): ?>
+			<li style="margin: 50px 0;">
+				<div class="title">
+					<a href="<?php echo e(URL('pages/'.$page->id)); ?>">
+						<h4><?php echo e($page->title); ?></h4>
+					</a>
+				</div>
+				<div class="body">
+					<p><?php echo e($page->body); ?></p>
+				</div>
+			</li>
+		<?php endforeach; ?>
+	</ul>
 </div>
 <?php $__env->stopSection(); ?>
 
-<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
+<?php echo $__env->make('_layouts.default', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
