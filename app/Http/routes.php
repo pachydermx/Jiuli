@@ -41,5 +41,6 @@ Route::group([
 		Route::get('/', 'AdminHomeController@index');
 		Route::resource('pages', 'PagesController');
 		Route::resource('comments', 'CommentsController');
+		Route::resource('regions', 'RegionsController');
 	}
 );

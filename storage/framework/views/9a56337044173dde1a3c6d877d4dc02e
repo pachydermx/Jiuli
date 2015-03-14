@@ -1,0 +1,32 @@
+<?php $__env->startSection('content'); ?>
+<div class="container">
+	<div class="row">
+		<div class="col-md-10 col-md-offset-1">
+			<div class="panel panel-default">
+				<div class="panel-heading">地域管理</div>
+
+				<div class="panel-body">
+
+					<a href="<?php echo e(URL('admin/regions/create')); ?>" class="btn btn-lg btn-primary">新增</a>
+
+					<?php foreach($regions as $region): ?>
+
+					<hr>
+					<div class="page">
+						<h4><?php echo e($region->region_name); ?></h4>
+					</div>
+					<a href="<?php echo e(URL('admin/regions/'.$region->id.'/edit')); ?>" class="btn btn-success">编辑</a>
+
+					<form action="<?php echo e(URL('admin/regions/'.$region->id)); ?>" method="POST" style="display: inline;">
+						<input name="_method" type="hidden" value="DELETE">
+						<input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
+						<button type="submit" class="btn btn-danger">删除</button>
+					</form>
+					<?php endforeach; ?>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

@@ -1,3 +1,4 @@
 演绎系统
-	区域 - region
+	地域 - region
+	区域 - district
 	地点 - spot
