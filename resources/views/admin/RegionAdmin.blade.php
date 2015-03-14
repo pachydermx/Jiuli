@@ -26,6 +26,31 @@
 									<hr>
 									<h6>{{ $district->name }}</h6>
 
+									<!-- 地点 -->
+
+									<div class="panel panel-default">
+										<div class="panel-body">
+											<a href="{{ URL('admin/spots/'.$district->id.'/create') }}" class="btn btn-lg btn-primary">新增</a>
+											@foreach ($district->hasManySpots as $spot)
+
+												<hr>
+												<h6>{{ $spot->name }}</h6>
+
+												<a href="{{ URL('admin/spots/'.$spot->id.'/edit') }}" class="btn btn-success">编辑</a>
+
+												<form action="{{ URL('admin/spots/'.$spot->id) }}" method="POST" style="display: inline;">
+													<input name="_method" type="hidden" value="DELETE">
+													<input type="hidden" name="_token" value="{{ csrf_token() }}">
+													<button type="submit" class="btn btn-danger">删除</button>
+												</form>
+
+											@endforeach
+										</div>
+									</div>
+
+
+									<!-- 地点结尾 -->
+
 									<a href="{{ URL('admin/districts/'.$district->id.'/edit') }}" class="btn btn-success">编辑</a>
 
 									<form action="{{ URL('admin/districts/'.$district->id) }}" method="POST" style="display: inline;">

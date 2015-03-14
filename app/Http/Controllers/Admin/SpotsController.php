@@ -5,6 +5,11 @@ use App\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 
+use App\District;
+use App\Spot;
+
+use Redirect, Input;
+
 class SpotsController extends Controller {
 
 	/**
@@ -22,9 +27,9 @@ class SpotsController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function create()
+	public function create($district_id)
 	{
-		//
+		return view('admin.spots.create')->withDistrict(District::find($district_id));
 	}
 
 	/**
@@ -32,9 +37,19 @@ class SpotsController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function store()
+	public function store(Request $request)
 	{
-		//
+		$this->validate($request, ['name' => 'required|max:255']);
+
+		$spot = new Spot;
+		$spot->name = Input::get('name');
+		$spot->district_id = Input::get('district_id');
+
+		if($spot->save()){
+			return Redirect::to('admin/regions');
+		} else {
+			return Redirect::back()->withInput()->withErrors('地域更新失败');
+		}
 	}
 
 	/**
@@ -56,7 +71,7 @@ class SpotsController extends Controller {
 	 */
 	public function edit($id)
 	{
-		//
+		return view('admin.spots.edit')->withSpot(Spot::find($id));
 	}
 
 	/**
@@ -65,9 +80,18 @@ class SpotsController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update(Request $request, $id)
 	{
-		//
+		$this->validate($request, ['name' => 'required|max:255']);
+
+		$spot = Spot::find($id);
+		$spot->name = Input::get('name');
+
+		if($spot->save()){
+			return Redirect::to('admin/regions');
+		} else {
+			return Redirect::back()->withInput()->withErrors('地域更新失败');
+		}
 	}
 
 	/**
@@ -78,7 +102,10 @@ class SpotsController extends Controller {
 	 */
 	public function destroy($id)
 	{
-		//
+		$spot = Spot::find($id);
+		$spot->delete();
+
+		return Redirect::to('admin/regions');
 	}
 
 }

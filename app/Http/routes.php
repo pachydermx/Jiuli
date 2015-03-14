@@ -44,5 +44,7 @@ Route::group([
 		Route::resource('regions', 'RegionsController');
 		Route::resource('districts', 'DistrictsController');
 		Route::resource('districts/{region_id}/create', 'DistrictsController@create');
+		Route::resource('spots', 'SpotsController');
+		Route::resource('spots/{district_id}/create', 'SpotsController@create');
 	}
 );

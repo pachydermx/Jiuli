@@ -24,6 +24,31 @@
 									<hr>
 									<h6><?php echo e($district->name); ?></h6>
 
+									<!-- 地点 -->
+
+									<div class="panel panel-default">
+										<div class="panel-body">
+											<a href="<?php echo e(URL('admin/spots/'.$district->id.'/create')); ?>" class="btn btn-lg btn-primary">新增</a>
+											<?php foreach($district->hasManySpots as $spot): ?>
+
+												<hr>
+												<h6><?php echo e($spot->name); ?></h6>
+
+												<a href="<?php echo e(URL('admin/spots/'.$spot->id.'/edit')); ?>" class="btn btn-success">编辑</a>
+
+												<form action="<?php echo e(URL('admin/spots/'.$spot->id)); ?>" method="POST" style="display: inline;">
+													<input name="_method" type="hidden" value="DELETE">
+													<input type="hidden" name="_token" value="<?php echo e(csrf_token()); ?>">
+													<button type="submit" class="btn btn-danger">删除</button>
+												</form>
+
+											<?php endforeach; ?>
+										</div>
+									</div>
+
+
+									<!-- 地点结尾 -->
+
 									<a href="<?php echo e(URL('admin/districts/'.$district->id.'/edit')); ?>" class="btn btn-success">编辑</a>
 
 									<form action="<?php echo e(URL('admin/districts/'.$district->id)); ?>" method="POST" style="display: inline;">
