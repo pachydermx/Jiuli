@@ -14,6 +14,9 @@
 Route::get('/', 'HomeController@index');
 Route::get('pages/{id}', 'PagesController@show');
 
+//评论功能
+Route::post('comment/store', 'CommentsController@store');
+
 /* 带注册的登录
 Route::controllers([
 	'auth' => 'Auth\AuthController',
@@ -37,5 +40,6 @@ Route::group([
 		//由于prefix设置为admin 所以这里的/实际是admin/
 		Route::get('/', 'AdminHomeController@index');
 		Route::resource('pages', 'PagesController');
+		Route::resource('comments', 'CommentsController');
 	}
 );

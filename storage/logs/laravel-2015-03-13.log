@@ -250,3 +250,8 @@ Stack trace:
 #35 C:\jiuli\htdocs\storage\framework\compiled.php(1880): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
 #36 C:\jiuli\htdocs\public\index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #37 {main}  
+[2015-03-13 09:54:25] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'syntax error, unexpected 'Route' (T_STRING)' in C:\jiuli\htdocs\app\Http\routes.php:28
+Stack trace:
+#0 C:\jiuli\htdocs\storage\framework\compiled.php(1738): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError(Array)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#2 {main}  
