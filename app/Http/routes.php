@@ -42,5 +42,7 @@ Route::group([
 		Route::resource('pages', 'PagesController');
 		Route::resource('comments', 'CommentsController');
 		Route::resource('regions', 'RegionsController');
+		Route::resource('districts', 'DistrictsController');
+		Route::resource('districts/{region_id}/create', 'DistrictsController@create');
 	}
 );

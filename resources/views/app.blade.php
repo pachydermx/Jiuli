@@ -35,6 +35,7 @@
 				<ul class="nav navbar-nav">
 					<li><a href="/admin">后台首页</a></li>
 					<li><a href="/admin/comments">管理评论</a></li>
+					<li><a href="/admin/regions">管理地域</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">

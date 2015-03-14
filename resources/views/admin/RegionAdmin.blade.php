@@ -16,6 +16,29 @@
 					<hr>
 					<div class="page">
 						<h4>{{ $region->region_name }}</h4>
+
+						<!-- 地区 -->
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<a href="{{ URL('admin/districts/'.$region->id.'/create') }}" class="btn btn-lg btn-primary">新增</a>
+								@foreach ($region->hasManyDistricts as $district)
+
+									<hr>
+									<h6>{{ $district->name }}</h6>
+
+									<a href="{{ URL('admin/districts/'.$district->id.'/edit') }}" class="btn btn-success">编辑</a>
+
+									<form action="{{ URL('admin/districts/'.$district->id) }}" method="POST" style="display: inline;">
+										<input name="_method" type="hidden" value="DELETE">
+										<input type="hidden" name="_token" value="{{ csrf_token() }}">
+										<button type="submit" class="btn btn-danger">删除</button>
+									</form>
+
+								@endforeach
+							</div>
+						</div>
+						<!-- 地区结尾 -->
+
 					</div>
 					<a href="{{ URL('admin/regions/'.$region->id.'/edit') }}" class="btn btn-success">编辑</a>
 
