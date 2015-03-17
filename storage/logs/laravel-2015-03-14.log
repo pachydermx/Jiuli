@@ -546,3 +546,83 @@ Stack trace:
 #37 C:\jiuli\htdocs\storage\framework\compiled.php(1880): Illuminate\Foundation\Http\Kernel->sendRequestThroughRouter(Object(Illuminate\Http\Request))
 #38 C:\jiuli\htdocs\public\index.php(53): Illuminate\Foundation\Http\Kernel->handle(Object(Illuminate\Http\Request))
 #39 {main}  
+[2015-03-14 09:36:17] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Non-abstract method App\Http\Controllers\Widget\SpotSelectorController::index() must contain body' in C:\jiuli\htdocs\app\Http\Controllers\Widget\SpotSelectorController.php:21
+Stack trace:
+#0 C:\jiuli\htdocs\storage\framework\compiled.php(1738): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError(Array)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#2 {main}  
+[2015-03-14 09:36:47] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Non-abstract method App\Http\Controllers\Widget\SpotSelectorController::index() must contain body' in C:\jiuli\htdocs\app\Http\Controllers\Widget\SpotSelectorController.php:21
+Stack trace:
+#0 C:\jiuli\htdocs\storage\framework\compiled.php(1738): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError(Array)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#2 {main}  
+[2015-03-14 09:36:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Non-abstract method App\Http\Controllers\Widget\SpotSelectorController::index() must contain body' in C:\jiuli\htdocs\app\Http\Controllers\Widget\SpotSelectorController.php:21
+Stack trace:
+#0 C:\jiuli\htdocs\storage\framework\compiled.php(1738): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError(Array)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#2 {main}  
+[2015-03-14 09:37:56] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Non-abstract method App\Http\Controllers\Widget\SpotSelectorController::index() must contain body' in C:\jiuli\htdocs\app\Http\Controllers\Widget\SpotSelectorController.php:21
+Stack trace:
+#0 C:\jiuli\htdocs\storage\framework\compiled.php(1738): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError(Array)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#2 {main}  
+[2015-03-14 09:38:21] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Non-abstract method App\Http\Controllers\Widget\SpotSelectorController::index() must contain body' in C:\jiuli\htdocs\app\Http\Controllers\Widget\SpotSelectorController.php:21
+Stack trace:
+#0 C:\jiuli\htdocs\storage\framework\compiled.php(1738): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError(Array)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#2 {main}  
+[2015-03-14 09:38:22] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Non-abstract method App\Http\Controllers\Widget\SpotSelectorController::index() must contain body' in C:\jiuli\htdocs\app\Http\Controllers\Widget\SpotSelectorController.php:21
+Stack trace:
+#0 C:\jiuli\htdocs\storage\framework\compiled.php(1738): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError(Array)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#2 {main}  
+[2015-03-14 09:38:23] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Non-abstract method App\Http\Controllers\Widget\SpotSelectorController::index() must contain body' in C:\jiuli\htdocs\app\Http\Controllers\Widget\SpotSelectorController.php:21
+Stack trace:
+#0 C:\jiuli\htdocs\storage\framework\compiled.php(1738): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError(Array)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#2 {main}  
+[2015-03-14 09:38:26] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Non-abstract method App\Http\Controllers\Widget\SpotSelectorController::index() must contain body' in C:\jiuli\htdocs\app\Http\Controllers\Widget\SpotSelectorController.php:21
+Stack trace:
+#0 C:\jiuli\htdocs\storage\framework\compiled.php(1738): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError(Array)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#2 {main}  
+[2015-03-14 09:40:47] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Non-abstract method App\Http\Controllers\Widget\SpotSelectorController::index() must contain body' in C:\jiuli\htdocs\app\Http\Controllers\Widget\SpotSelectorController.php:21
+Stack trace:
+#0 C:\jiuli\htdocs\storage\framework\compiled.php(1738): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError(Array)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#2 {main}  
+[2015-03-14 09:40:48] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Non-abstract method App\Http\Controllers\Widget\SpotSelectorController::index() must contain body' in C:\jiuli\htdocs\app\Http\Controllers\Widget\SpotSelectorController.php:21
+Stack trace:
+#0 C:\jiuli\htdocs\storage\framework\compiled.php(1738): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError(Array)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#2 {main}  
+[2015-03-14 09:40:49] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Non-abstract method App\Http\Controllers\Widget\SpotSelectorController::index() must contain body' in C:\jiuli\htdocs\app\Http\Controllers\Widget\SpotSelectorController.php:21
+Stack trace:
+#0 C:\jiuli\htdocs\storage\framework\compiled.php(1738): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError(Array)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#2 {main}  
+[2015-03-14 09:41:07] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Non-abstract method App\Http\Controllers\Widget\SpotSelectorController::index() must contain body' in C:\jiuli\htdocs\app\Http\Controllers\Widget\SpotSelectorController.php:21
+Stack trace:
+#0 C:\jiuli\htdocs\storage\framework\compiled.php(1738): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError(Array)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#2 {main}  
+[2015-03-14 09:41:34] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Non-abstract method App\Http\Controllers\Widget\SpotSelectorController::index() must contain body' in C:\jiuli\htdocs\app\Http\Controllers\Widget\SpotSelectorController.php:21
+Stack trace:
+#0 C:\jiuli\htdocs\storage\framework\compiled.php(1738): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError(Array)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#2 {main}  
+[2015-03-14 09:41:35] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Non-abstract method App\Http\Controllers\Widget\SpotSelectorController::index() must contain body' in C:\jiuli\htdocs\app\Http\Controllers\Widget\SpotSelectorController.php:21
+Stack trace:
+#0 C:\jiuli\htdocs\storage\framework\compiled.php(1738): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError(Array)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#2 {main}  
+[2015-03-14 09:41:37] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Non-abstract method App\Http\Controllers\Widget\SpotSelectorController::index() must contain body' in C:\jiuli\htdocs\app\Http\Controllers\Widget\SpotSelectorController.php:21
+Stack trace:
+#0 C:\jiuli\htdocs\storage\framework\compiled.php(1738): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError(Array)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#2 {main}  
+[2015-03-14 09:41:46] local.ERROR: exception 'Symfony\Component\Debug\Exception\FatalErrorException' with message 'Non-abstract method App\Http\Controllers\Widget\SpotSelectorController::index() must contain body' in C:\jiuli\htdocs\app\Http\Controllers\Widget\SpotSelectorController.php:21
+Stack trace:
+#0 C:\jiuli\htdocs\storage\framework\compiled.php(1738): Illuminate\Foundation\Bootstrap\HandleExceptions->fatalExceptionFromError(Array)
+#1 [internal function]: Illuminate\Foundation\Bootstrap\HandleExceptions->handleShutdown()
+#2 {main}  

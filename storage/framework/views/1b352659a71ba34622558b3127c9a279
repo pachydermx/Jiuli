@@ -1,0 +1,15 @@
+<?php $__env->startSection('content'); ?>
+<select name="region">
+	<option>请选择</option>
+	<?php foreach($regions as $region): ?>
+		<option value="<?php echo e($region->id); ?>"><?php echo e($region->region_name); ?></option>
+	<?php endforeach; ?>
+</select>
+<script>
+	$("select[name='region']").change(function(){
+		var region_id_selected = $(event.target).val();
+		console.log(region_id_selected);
+	});
+</script>
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('main', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
